@@ -20,7 +20,7 @@ html {
 
 body {
     overflow-x: hidden;
-    background: rgba(252, 253, 34, 0.2);
+    background: white;
 }
 
 a {
@@ -59,7 +59,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: yellow;
+    color: #f9b208;
 }
 
 #logo {
@@ -95,7 +95,7 @@ nav {
     object-fit: cover;
     clip-path: polygon(0 0, 100% 0, 100% 65%, 0 81%);
     border-radius: 20px;
-    background: #f9b208;
+    background: #687980;
 }
 
 .profile-img {
@@ -130,7 +130,7 @@ nav {
 /*------- contact button ---------*/
 .card .button {
     padding: 1rem 2.5rem;
-    background-color: rgba(42, 69, 109, 1);
+    background-color: #02475e;
     border-radius: 2rem;
     margin: 1rem 0;
     text-transform: uppercase;
