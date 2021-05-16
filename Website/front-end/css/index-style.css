@@ -34,11 +34,17 @@
 */
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 10vh;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(252, 253, 34, 0.7);
+  border-bottom: 5px solid;
+}
 
   .nav-links {
     display: flex;
@@ -60,6 +66,24 @@ nav {
     font-weight: 200;
     font-size: 2rem;
   }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+#casa {
+  color: white;
+  font-size: 1rem;
+  padding-right: 40px;
+  z-index: 0;
+}
+
   
 /*--------- Landing page animation ---------*/
 .landing {
@@ -77,21 +101,24 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 .slider {
-  background: #A1A8AE;
+  background: rgba(252, 253, 34, 0.7);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
+  z-index: 2;
 }
 
 .intro-text {
   color: rgb(233, 233, 233);
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
+  z-index: 3;
 }
 
 .hide {
@@ -104,9 +131,60 @@ nav {
   display: inline-block;
 }
 
-body {
-  background-color: rgba( 224, 230, 240, 0.5);
-  background-size: cover;
+.burger {
+  display: none;
+  cursor: pointer;
 }
 
+.burger div{
+  width: 27px;
+  height: 3px;
+  margin: 5px;
+  background-color: white;
+}
 
+@media screen and (max-width: 850px){
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0;
+    height: 90vh;
+    width: 20%;
+    top: 10vh;
+    padding-right: 150px;
+    background: rgba(252, 253, 34, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+  #casa {
+    display: none;
+  }
+}
+
+.nav-active {
+  transform: translateX(0);
+}
+/*
+@keyframes navLinkFade{
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+*/
