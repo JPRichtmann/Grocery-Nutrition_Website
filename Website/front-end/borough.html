@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name='description' content='Interactive Map'>
+    <meta name='author' content='Spider Cartographers'>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=yes" /> 
+	
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script> 
+	<link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet" />
+	<script src='https://d3js.org/d3.v5.js'></script>
+	<script src="https://unpkg.com/mapbox-choropleth"></script>
+    <!-- <script src='https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js'></script>
+	<style> body { margin: 0; padding: 0; } #map { position: absolute; top: 0; bottom: 0; width: 100%; }; </style>-->
+    <script src='https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js'></script>
+    <script src='https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js'></script>
+    <script src='https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js'></script>
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.10.2.min.js?ver=1.10.2'></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&key=AIzaSyCK_2YHUeL00WeSl7OSZCKATaHIH7cxKG4"> </script>
+	<script type='text/javascript' src='http://dev.spatialdatacapture.org/xdate/xdate.js'></script>
+	<link rel='stylesheet' id='font-css'  href='./css/style.css' type='text/css' media='all' />
+</head>
+
+<style>
+
+    #menu {
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 10px;
+        border-radius: 3px;
+        width: 120px;
+        border: 1px solid rgba(0,0,0,0.4);
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #menu a {
+        font-size: 13px;
+        color: #404040;
+        display: block;
+        margin: 0;
+        padding: 0;
+        padding: 10px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        text-align: center;
+    }
+
+    #menu a:last-child {
+        border: none;
+    }
+
+    #menu a:hover {
+        background-color: #f8f8f8;
+        color: #404040;
+    }
+
+    #menu a.active {
+        background-color: #3887be;
+        color: #ffffff;
+    }
+
+    #menu a.active:hover {
+        background: #3074a4;
+    }
+	
+	#menu a.deactivated {
+  background-color: #102839;
+  color: #ffffff;
+
+}
+#menu a.deactivated:hover {
+  background-color: rgba(48, 116, 164,0.75);
+  color: #ffffff;
+
+}	
+	
+</style>
+	
+
+
+
+	<!-- Mapbox Geocoder FOR SEARCH BAR-->
+	<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+	<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+	<!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+		<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+	<body id='map'>
+	
+	<!-- Welcome Pop Up Box-->
+	
+	
+	
+	<!-- Mapbox SideBar-->
+	<div id="map_sidebar">
+	
+	<!-- burger menu -->
+		<div class="nav-toggle">
+			<div class="nav-toggle-bar"></div>	
+		</div>
+			
+		<nav class='nav'>
+              <ul>
+                <li><a href='borough.html'>borough map</a></li>
+       
+                <li><a href='msoa.html'>msoa map</a></li>
+
+              </ul>
+            </nav>	
+			
+	
+	</div><!-- end of sidebar div -->
+	
+	<!-- MAPBOX MAP -->
+	<div id='map_container'></div>
+	<nav id="menu"></nav>
+	<div id="legend_1" ></div>
+	<div id="legend_2" ></div>
+	<div id="legend_3" ></div>
+	<div id="legend_4" ></div>
+	<div id="legend_5" ></div>
+	<div id="legend_6" ></div>
+	<div id="legend_7" ></div>
+	<div id="legend_8" ></div>
+	<div id="legend_9" ></div>
+	<div id="legend_10" ></div>
+	
+	<!-- Scripts -->
+    <script type="text/javascript" src="./js/map-boro.js"></script>
+	<script type="text/javascript" src="./js/clusters_info_popup.js"></script>
+	<script type="text/javascript" src="./js/burgermenu.js"></script>
+	
+	
+</body> 
+</html>
