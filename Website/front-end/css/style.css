@@ -691,19 +691,19 @@ figure {
 }
 
 .onoffswitchCluster6-checkbox:checked+.onoffswitchCluster6-label {
-  background-color: green;
-}
-
-.onoffswitchCluster6-checkbox:checked+.onoffswitchCluster6-label, .onoffswitchCluster6-checkbox:checked+.onoffswitchCluster6-label:before {
-  border-color: green;
-}
-
-.onoffswitchCluster7-checkbox:checked+.onoffswitchCluster7-label {
   background-color: orange;
 }
 
-.onoffswitchCluster7-checkbox:checked+.onoffswitchCluster7-label, .onoffswitchCluster7-checkbox:checked+.onoffswitchCluster7-label:before {
+.onoffswitchCluster6-checkbox:checked+.onoffswitchCluster6-label, .onoffswitchCluster6-checkbox:checked+.onoffswitchCluster6-label:before {
   border-color: orange;
+}
+
+.onoffswitchCluster7-checkbox:checked+.onoffswitchCluster7-label {
+  background-color: green;
+}
+
+.onoffswitchCluster7-checkbox:checked+.onoffswitchCluster7-label, .onoffswitchCluster7-checkbox:checked+.onoffswitchCluster7-label:before {
+  border-color: green;
 }
 
 .onoffswitchCluster8-checkbox:checked+.onoffswitchCluster8-label {

@@ -345,7 +345,7 @@ map.on('load', function() {
 	})
 	
 	// One cluster///////////////////////////////////////////////////////////////////////////
-      $('#myonoffswitchCluster6').click(function(){
+      $('#myonoffswitchCluster7').click(function(){
 		  	  
         if($(this).is(':checked')){
 			var dataArray = [];
@@ -391,7 +391,7 @@ map.on('load', function() {
 	})	
 	
 	// One cluster///////////////////////////////////////////////////////////////////////////
-     $('#myonoffswitchCluster7').click(function(){
+     $('#myonoffswitchCluster6').click(function(){
 		  
 		  
         if($(this).is(':checked')){
