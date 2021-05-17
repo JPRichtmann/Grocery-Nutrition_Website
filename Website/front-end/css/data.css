@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: space-around;
     background: rgba(252, 253, 34, 0.7);
-    border-bottom: 5px solid;
+    border-bottom: 3px solid;
   }
   
     .nav-links {
@@ -36,7 +36,7 @@
     }
   
     .nav-links li a:hover {
-      color: yellow;
+      color: #fc5404;
     }
   
     #logo {
