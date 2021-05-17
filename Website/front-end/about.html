@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/Website/front-end/css/about-style.css" />
+    <title>About</title>
 </head>
 <body>
-    <h1>Welcome to the about page</h1>
+    <section class="landing">
+        <nav>
+          <h1 id="logo">About</h1>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="data.html">Maps</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </section>
+
+      <div id="image"></div>
+
+      <h2>What is Foodie ?</h2>
+      <p id='intro'>According to the WHO, nutrition not only plays a critical part in health and well being it also is related to lower risk non-communicable diseases (such as diabetes and cardiovascular disease) and longevity.</p>
+      <p id='intro2'>We analyse and visualise grocery and food consumption data at scale to shed light onto health and diet information of London’s population. This information is important for a variety of stakeholders: Cities and public officials can monitor public health, retailers gain insight on consumption patterns of consumers and citizens can be informed about the nutritional content of foods.</p>
+      <p id='intro3'>Foodie is aimed at promoting nutrition-related health of populations and informed choices of citizens by visualising grocery store data. </p>
+      <img id="illustration1" src="/Website/front-end/img/clip-1061.png" alt="Illustration of woman and groceries"></div>
+      <img id="arrow" src="/Website/front-end/img/scribbles-scribbles-60.png" alt="Black arrow"></div>
+      <img id="illustration2" src="/Website/front-end/img/urban-928.png" alt="Illustration of docotors and smartphone"></div>
+      <img id="illustration3" src="/Website/front-end/img/kingdom-1651.png" alt="Illustration of docotors and smartphone"></div>
+      <p id='text'>The insight obtained can help create health-conscious food recommender systems or food consumption can be linked to health outcomes.</p>
+      <h2 id="analysis1">Dataset</h2>
+      <div id="button">
+        <a id="tesco" href="https://figshare.com/collections/Tesco_Grocery_1_0/4769354/2">Tesco data</a>
+      </div>
+      <p id='text2'>Tesco groceries data suggests aggregated information about purchases in London wards, including parameters such as average fiber content in the purchased item, the average volume of a drink, or fraction of poultry items in purchases. It offers a wide range of possibilities for analyzing the diet. One of the related problems is children overweight, it is quite relevant and researched topic. Thus, we research differences between London boroughs in terms of diet and the relation between diet and the children overweight.</p>
+      <h2 id="analysis2">Analysis</h2>
+      <p id="text3"> In terms of analysis, the pearson coefficient revealed linear correlation between the Tesco groceries data for different wards and children overweight disease. We have found considerably large positive correlation between several variables, such as fraction of water in purchases, average weight product or fraction of poultry in purchases.</p>
+      <img id="figure1" src="/Website/front-end/img/figure.png" alt="Colormaps of fraction of water and overweight distribution."></div>
+      <p id="text4">We applied a nonlinear model to evaluate more complex dependencies between Tesco data and children's overweight disease. Correlation analysis show quite a weak negative correlation between the fraction of tea and coffee and the target variable. However, the nonlinear regression finds that fraction of tea and coffee is top-2 parameters to estimate the children overweight. Thus we conclude that the fraction of tea and coffee can explain a great part of the variance in overweight data, but the dependence is nonlinear.</p>
+      <img id="figure2" src="/Website/front-end/img/figure2.png" alt="Features nonlinear regression."></div>
+      <footer>
+        <p>Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
+        <p>Illustration by <a href="https://icons8.com/illustrations/author/5d99891e7dca3d0016cd4e34">Julia Gnedina</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
+        <p>Illustration by <a href="https://icons8.com/illustrations/author/5f4e7e2801d03600102f424b">Виолетта Барсук</a> from <a href="https://icons8.com/illustrations">Ouch!</a></p>
+      </footer>
 </body>
 </html>
+
