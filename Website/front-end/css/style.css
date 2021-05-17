@@ -16,7 +16,7 @@ p {
 
 h1, .sig, p, a, h4, h3 {
   font-family: Futura, sans-serif;
-  color: #ffa372;
+  color: black;
 }
 
 h3 {
@@ -476,13 +476,12 @@ figure {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  background-color: #1b262c;
-
+  background-color: #344669;
 }
 
 #map_container {
   position: absolute;
-  width: 72%;
+  width: 80%;
   height: 100%;
   right: 0;
   margin: 0;
@@ -496,7 +495,7 @@ figure {
   left: 0;
   margin: 0;
   padding: 5% 2% 2% 2%;
-  background-color: #1b262c;
+  background-color: #344669;
   overflow: auto;
 }
 
@@ -504,6 +503,7 @@ figure {
   position: relative;
   margin: 0% 0% 4% 0%;
   padding: 0;
+  color: white;
 }
 
 #flowsMoreInfo, #clustersMoreInfo {
@@ -523,7 +523,7 @@ figure {
   margin: 0;
   padding: 0px;
   border-radius: 25px;
-  background: #ffa372;
+  background: white;
   color: #1b262c;
   font-size: 14px;
 }
@@ -574,7 +574,7 @@ figure {
   padding-left: 4px;
   font-size: 12px;
   text-decoration: none;
-  color: #fff3e0;
+  color: black;
   line-height: 18px;
 }
 
@@ -1119,7 +1119,7 @@ svg text {
   position: absolute;
   z-index: 502;
   padding: 5%;
-  background: #37a583;
+  background: rgba(252, 253, 34, 0.7);
   border-radius: 25px;
   padding: 20px;
   font-size: 15px;
@@ -1130,7 +1130,7 @@ svg text {
 }
 
 #clustersInfoPopup {
-  height: 82%;
+  height: 45%;
   width: 50%;
   top: 10%;
   left: 25%;
@@ -1147,7 +1147,7 @@ svg text {
 #clustersInfoPopup p, #flowsInfoPopup p {
   position: relative;
   font-size: 14px;
-  color: #fff3e0;
+  color: black;
   text-decoration: none;
 }
 
@@ -1174,16 +1174,16 @@ svg text {
   -ms-transition: left 0.5s ease;
   -o-transition: left 0.5s ease;
   transition: left 0.5s ease;
-  background: #37a583;
-  color: #fff3e0;
+  background: rgba(252, 253, 34, 0.7);
+  color: black;
   cursor: pointer;
   font-size: 2rem;
   height: 100vh;
-  left: -28%;
+  left: -18%;
   padding: 6rem 2rem 2rem 2rem;
   position: fixed;
   top: 0;
-  width: 28%;
+  width: 18%;
   z-index: 1;
 }
 
@@ -1207,7 +1207,7 @@ svg text {
 }
 
 .nav a:hover {
-  color: #fff059;
+  color: tomato;
   text-decoration: none;
 }
 
