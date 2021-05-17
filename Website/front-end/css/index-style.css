@@ -17,7 +17,7 @@
     background: url("/Website/front-end/img/fikri-rasyid-ezeC8-clZSs-unsplash.jpg");
     background-size: cover;
     padding: 0rem 5rem;
-    color: white;
+    color: black;
   }
   
 /*
@@ -43,7 +43,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   background: rgba(252, 253, 34, 0.7);
-  border-bottom: 5px solid;
+  border-bottom: 3px solid;
 }
 
   .nav-links {
@@ -55,7 +55,7 @@ nav {
     padding-left: 10rem;
     font-size: 1.2rem;
     text-decoration: none;
-    color: white;
+    color: black;
   }
 
   .nav-links li a:hover {
@@ -131,6 +131,7 @@ nav {
   display: inline-block;
 }
 
+/*-------------- Burger menu ------------*/
 .burger {
   display: none;
   cursor: pointer;
