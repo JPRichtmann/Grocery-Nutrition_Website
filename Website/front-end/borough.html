@@ -86,8 +86,30 @@
 		<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
 	<body id='map'>
 	
-	<!-- Welcome Pop Up Box-->
-	
+	<!-- Info Pop Up Box-->
+         <div id='clustersInfoPopup'>
+            <h3>About the map</h3>
+            <p>This Borough map shows the 9 explanatory variables that are found significant in correlation
+			to the target variable: Percentage of child overweight. The variables are listed in descending order of 
+			their absolute values of Pearson correlation coefficient.</p>
+
+            <h3>Maps in red </h3>
+            <p>They are variables found to have positive values of coefficients, in descending order. Labels with a (%)
+			indicate that their values are a percentage of the total purchase in the year 2015, while 'avg. Weight' indicates
+			the actual average grams purchased.</p>
+
+            <h3>Maps in green</h3>
+            <p>They are variables found to have negative values of coefficients, in descending order. Labels with a (%)
+			indicate that their values are a percentage of the total purchase in the year 2015, while 'avg. Fibre' indicates
+			the actual average grams purchased.</p>
+
+
+            <a id='clustersInfoPopupBoxClose'>
+               <div id='clustersInfoPopupBoxCloseButton'>
+                  <p>X</p>
+               </div>
+            </a>
+         </div>	
 	
 	
 	<!-- Mapbox SideBar-->
@@ -105,7 +127,13 @@
               </ul>
         </nav>	
 			
-	
+	<div class='infoButtonAlignment'>
+                  <p class='sidebarSubtitle'>Choropleth Info:</p>
+                  <div id='clustersMoreInfo'>
+                     <p id='clustersMoreInfo_p'>i</p>
+                  </div>
+               </div>
+		
 	</div><!-- end of sidebar div -->
 	
 	<!-- MAPBOX MAP -->
