@@ -14,7 +14,7 @@
 
 .landing {
     min-height: 100vh;
-    background: url("/Website/front-end/img/fikri-rasyid-ezeC8-clZSs-unsplash.jpg");
+    background: url("../img/fikri-rasyid-ezeC8-clZSs-unsplash.jpg");
     background-size: cover;
     padding: 0rem 5rem;
     color: black;
